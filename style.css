@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border: 5px solid #c4afff;
+  border-radius: 20px;
+}
+
+main {
+  flex: 1;
+}
+body {
+  background-color: white;
+}
+h1 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 70px;
+  font-family: "Rationale", sans-serif;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+.link_knap {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+.forside_knapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.forside_knapper button {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  border: none;
+  background-color: transparent;
+}
+
+.forside_baggrund {
+  background-color: white;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #e6ddff;
+}
+
+footer {
+  background-color: #e6ddff;
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.projekter {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  border-radius: 30px;
+}
+
+.indhold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px;
+  gap: 40px;
+}
+
+.indhold .info {
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .projekter {
+    display: flex;
+    flex-direction: column;
+  }
+  .indhold {
+    display: flex;
+    flex-direction: column;
+  }
+  .indhold .illustration {
+    order: -1;
+  }
+  .indhold .kompetencer {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
